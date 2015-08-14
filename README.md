@@ -10,11 +10,11 @@ This repo is about the Getting and Cleanning Data Coursera course project.
 
 
 The R script run_analysis.R does the following:
-1.Downloads the data source from the course website and put it into a folder called ¡°Project¡± created in the working directory. 
+1.Downloads the data source from the course website and put it into a folder called ¡°Project¡± created in the working directory.
 2.Loads both the training and the test datasets and merge them to create one dataset.
 3.Extracts only those columns/variables about the mean and standard deviation for each measurement.
-4.Uses descriptive activity names to name the activities in the dataset 
-5.Labels the dataset with readable and descriptive names 
+4.Uses descriptive activity names to name the activities in the dataset.
+5.Labels the dataset with readable and descriptive names.
 6.Creates another independent tidy dataset (tidydata.txt) with the average of each variable for each activity and each subject.
 
 This run_analysis.R code can be directly launched and run in RStudio to create the tidydata.txt in the Project folder under the working directory. This run_analysis.R code depends on the plyr package, which will be automatically loaded if installed.
