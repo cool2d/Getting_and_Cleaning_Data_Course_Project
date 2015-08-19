@@ -44,14 +44,14 @@ The tidy data set has 180 observations of 81 variables. It summarizes the averag
 ###Variables
 All the variables in this dataset can be divided into two categories: Identifiers(2), Measurements(79).
 #### Identifiers
-*SubjectID: The ID of the subject who performed the activity.
-*Activity: The type of activity performed by a subject when any measurements were taken. 
+* SubjectID: The ID of the subject who performed the activity.
+* Activity: The type of activity performed by a subject when any measurements were taken. 
 
 Class of these identifier variables: factor.
 
-Unique values/levels of the variables: 
-*SubjectID - 30 levels (ranging from 1 through 30);
-*Activity ¨C 6 levels (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS).
+Unique values/levels of the variables:
+* SubjectID - 30 levels (ranging from 1 through 30);
+* Activity ¨C 6 levels (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS).
 
 ####Measurements
 Among the original 561 feature variables, I count only the entries that contain the string mean() or std(). The number of measurements I selected totals at 79. 
