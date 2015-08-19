@@ -54,7 +54,7 @@ Unique values/levels of the variables:
 * Activity - 6 levels (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS).
 
 ####Measurements
-Among the original 561 feature variables, I count only the entries that contain the string mean() or std(). The number of measurements I selected totals at 79. 
+Among the original 561 feature variables, I extracted only the entries that contain the string mean() or std(). The number of measurements I selected totals at 79. 
 
 Class of these measurement variables: numeric.
 
