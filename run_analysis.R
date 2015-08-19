@@ -36,20 +36,23 @@ WantedData[,2] <- activity[WantedData[,2],2]
 
 ## 5. Label the dataset with readable and descriptive names 
 Wantedfeatures.name <- features[mean_or_std_f,2] #create a vector containing the names of the selected features/measurements
-# clean up the feature names,e.g. remove (), replace Mag with Magnitude, replace BodyBody with Body..
+# clean up the feature names,e.g. remove (), replace Mag with Magnitude, replace BodyBody with Body, and so on.
 Wantedfeatures.name <- gsub("\\()","",Wantedfeatures.name)
 Wantedfeatures.name <- gsub("\\-","",Wantedfeatures.name)
 Wantedfeatures.name <- gsub("mean","Mean",Wantedfeatures.name)
 Wantedfeatures.name <- gsub("std","Std",Wantedfeatures.name)
 Wantedfeatures.name <- gsub("BodyBody","Body", Wantedfeatures.name)
 Wantedfeatures.name <- gsub("Mag","Magnitude", Wantedfeatures.name)
-# add descriptive names to all the columns
+Wantedfeatures.name <- gsub("Acc","Accelerometer", Wantedfeatures.name)
+Wantedfeatures.name <- gsub("Gyro","Gyroscope", Wantedfeatures.name)
+# add the descriptive names to all the columns
 names(WantedData) <- c("SubjectID","Activity", Wantedfeatures.name)
 
 ## 6. Create a second, independent tidy dataset 
 ## with the average of each variable for each activity and each subject.
 library(plyr)
-tidydata <- aggregate(.~SubjectID + Activity, WantedData, mean) #summarize the mean of each variable for each activity and subject
+WantedData$SubjectID <- as.factor(WantedData$SubjectID) #turn SubjectID into factor class
+tidydata <- aggregate(.~SubjectID + Activity, WantedData, mean) #summarize the average of each variable for each activity and subject
 tidydata <- tidydata[order(tidydata$SubjectID,tidydata$Activity),] # sort the data
 write.table(tidydata, file = "./Project/tidydata.txt", row.names = F, quote = F)
 
