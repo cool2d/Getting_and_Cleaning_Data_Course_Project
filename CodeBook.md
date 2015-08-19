@@ -37,7 +37,7 @@ The whole transformation process takes 6 parts:
 * Labels the dataset with descriptive names (i.e., adds variable names and cleans them up)
 * Creates an independent tidy dataset (tidydata.txt) with the average of each variable for each activity and each subject.
 
-##Description of the variables in the tidydata.txt file
+##Description of the tidydata.txt file
 ###Dimensions and summary of the dataset: 
 The tidy data set has 180 observations of 81 variables. It summarizes the average of 79 selected variables/measurements in each of the 6 activities for each of the 30 subjects.
 
@@ -49,8 +49,9 @@ All the variables in this dataset can be divided into two categories: Identifier
 
 Class of these identifier variables: factor.
 
-Unique values/levels of the variables: SubjectID - 30 levels (ranging from 1 through 30); 
-Activity ¨C 6 levels (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS).
+Unique values/levels of the variables: 
+*SubjectID - 30 levels (ranging from 1 through 30);
+*Activity ¨C 6 levels (LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS).
 
 ####Measurements
 Among the original 561 feature variables, I count only the entries that contain the string mean() or std(). The number of measurements I selected totals at 79. 
@@ -58,67 +59,67 @@ Among the original 561 feature variables, I count only the entries that contain 
 Class of these measurement variables: numeric.
 
 The cleaned-up measurement variable names are as follows.
-*tBodyAccelerometerMeanX                 
+*tBodyAccelerometerMeanX
 *tBodyAccelerometerMeanY
 *tBodyAccelerometerMeanZ
-*tBodyAccelerometerStdX                  
+*tBodyAccelerometerStdX
 *tBodyAccelerometerStdY
 *tBodyAccelerometerStdZ
 *tGravityAccelerometerMeanX 
 *tGravityAccelerometerMeanY
 *tGravityAccelerometerMeanZ
-*tGravityAccelerometerStdX               
+*tGravityAccelerometerStdX
 *tGravityAccelerometerStdY
 *tGravityAccelerometerStdZ
-*tBodyAccelerometerJerkMeanX             
+*tBodyAccelerometerJerkMeanX           
 *tBodyAccelerometerJerkMeanY
 *tBodyAccelerometerJerkMeanZ
-*tBodyAccelerometerJerkStdX              
+*tBodyAccelerometerJerkStdX
 *tBodyAccelerometerJerkStdY
 *tBodyAccelerometerJerkStdZ
-*tBodyGyroscopeMeanX                
+*tBodyGyroscopeMeanX
 *tBodyGyroscopeMeanY
 *tBodyGyroscopeMeanZ
-*tBodyGyroscopeStdX                 
+*tBodyGyroscopeStdX
 *tBodyGyroscopeStdY
 *tBodyGyroscopeStdZ
-*tBodyGyroscopeJerkMeanX            
+*tBodyGyroscopeJerkMeanX
 *tBodyGyroscopeJerkMeanY
 *tBodyGyroscopeJerkMeanZ
 *tBodyGyroscopeJerkStdX             
 *tBodyGyroscopeJerkStdY
 *tBodyGyroscopeJerkStdZ
-*tBodyAccelerometerMagnitudeMean         
+*tBodyAccelerometerMagnitudeMean
 *tBodyAccelerometerMagnitudeStd
 *tGravityAccelerometerMagnitudeMean
-*tGravityAccelerometerMagnitudeStd       
+*tGravityAccelerometerMagnitudeStd
 *tBodyAccelerometerJerkMagnitudeMean
 *tBodyAccelerometerJerkMagnitudeStd
-*tBodyGyroscopeMagnitudeMean        
+*tBodyGyroscopeMagnitudeMean
 *tBodyGyroscopeMagnitudeStd
 *tBodyGyroscopeJerkMagnitudeMean
-*tBodyGyroscopeJerkMagnitudeStd     
+*tBodyGyroscopeJerkMagnitudeStd
 *fBodyAccelerometerMeanX
 *fBodyAccelerometerMeanY
-*fBodyAccelerometerMeanZ                 
+*fBodyAccelerometerMeanZ
 *fBodyAccelerometerStdX
 *fBodyAccelerometerStdY
-*fBodyAccelerometerStdZ                  
+*fBodyAccelerometerStdZ
 *fBodyAccelerometerMeanFreqX
 *fBodyAccelerometerMeanFreqY
-*fBodyAccelerometerMeanFreqZ             
+*fBodyAccelerometerMeanFreqZ
 *fBodyAccelerometerJerkMeanX
 *fBodyAccelerometerJerkMeanY
-*fBodyAccelerometerJerkMeanZ             
+*fBodyAccelerometerJerkMeanZ
 *fBodyAccelerometerJerkStdX
 *fBodyAccelerometerJerkStdY
-*fBodyAccelerometerJerkStdZ              
+*fBodyAccelerometerJerkStdZ
 *fBodyAccelerometerJerkMeanFreqX
 *fBodyAccelerometerJerkMeanFreqY
-*fBodyAccelerometerJerkMeanFreqZ         
+*fBodyAccelerometerJerkMeanFreqZ
 *fBodyGyroscopeMeanX
 *fBodyGyroscopeMeanY
-*fBodyGyroscopeMeanZ                
+*fBodyGyroscopeMeanZ               
 *fBodyGyroscopeStdX
 *fBodyGyroscopeStdY
 *fBodyGyroscopeStdZ                 
