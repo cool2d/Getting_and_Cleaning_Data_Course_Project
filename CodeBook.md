@@ -3,10 +3,10 @@ This project creates an R script that collects, processes, cleans a raw dataset,
 
 #Study Design and Data Processing
 ##Data source
-The data for this project was collected from the accelerometers from the Samsung Galaxy S smartphone. A full description about the original data can be obtained from:
+The original data for this project was collected from the accelerometers from the Samsung Galaxy S smartphone. A full description about the original data can be obtained from:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-The data for this project was downloaded from the course website : 
+The raw data for this project was downloaded from the course website : 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 ##Notes on the original (raw) data
