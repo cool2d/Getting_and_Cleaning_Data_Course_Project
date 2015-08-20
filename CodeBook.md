@@ -1,5 +1,5 @@
 #Getting and Cleaning Data Project Description
-The objective of this project is to create an R script that collects, processes, and cleans the raw dataset to produce tidy data that can be used for later analysis.
+This project creates an R script that collects, processes, cleans a raw dataset, and produces tidy dataset that can be used for later analysis.
 
 #Study Design and Data Processing
 ##Data source
@@ -19,10 +19,10 @@ The raw dataset includes the following files:
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 - 'features.txt': List of all features (a total of 561).
 - 'activity_labels.txt': Links the class labels (1 to 6) with their activity names (WALKING, SITTING, etc.).
-- 'train/X_train.txt': Training set (including 7352 observations, 561 variables).
+- 'train/X_train.txt': Training data (including 7352 observations, 561 variables).
 - 'train/y_train.txt': Training labels.
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-- 'test/X_test.txt': Test set (including 2947 observations, 561 variables).
+- 'test/X_test.txt': Test data (including 2947 observations, 561 variables).
 - 'test/y_test.txt': Test labels, ranging from 1 to 6. 
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
