@@ -1,6 +1,6 @@
 ##Getting and Cleaning Data - Course Project
 
-This repo is about the Getting and Cleanning Data Coursera course project.
+This repo is about the Getting and Cleanning Data Coursera course project. The objective of this project is to create an R script that collects, processes, and cleans a raw dataset to produce tidy data that can be used for later analysis.
 
 ###Files in this repo
 * CodeBook.md: Information about the variables and summaries of the raw and tidy datasets, as well as some transformation details.
