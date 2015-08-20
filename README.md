@@ -5,7 +5,7 @@ This repository hosts the project deliverables for the Coursera course 'Getting 
 ###Files in this repo
 * CodeBook.md: Description of the variables, the raw and tidy datasets, and major transformations performed to clean up the data.
 * README.md: This file.
-* run_analysis.R: R script to download and transform a raw dataset to a tidy one, according to the course requirement.
+* run_analysis.R: R script to download and transform a raw dataset to a tidy one, according to the course requirements.
 * tidydata.txt: The end result (a tidy dataset) of running the R code.
 
 
