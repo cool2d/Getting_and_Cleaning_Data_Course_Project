@@ -24,8 +24,8 @@ mergeSubject <- rbind(subject_train,subject_test)
 features <- read.table("./Project/UCI HAR Dataset/features.txt", stringsAsFactors = F) 
 #the features dataset records the names of all the measurement variables
 
-#extract those columns with mean() or std() in their names
-mean_or_std_f <- grep("mean()|std()", features[,2]) 
+#extract those columns with "mean" or "std" in their names (including meanfreq)
+mean_or_std_f <- grep("mean|std", features[,2]) 
 mergedX_subset <- mergeX[,mean_or_std_f]
 WantedData <- cbind(mergeSubject,mergeY,mergedX_subset) 
 #WantedData is a complete dataset of the extracted measurements, subject IDs and activity IDs 
